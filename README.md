@@ -22,15 +22,14 @@ Mapping the current state of nut-allergy-friendliness of various restaurants, co
 - [x] embed map in static site
 - [x] generate static site from script
 - [ ] add license
-- [ ] end-to-end script skeleton (manual)
 - [ ] fill in script:
-  - [ ] download sheet csv 
-  - [ ] parse entries for website
-  - [ ] pull entries into website
+  - [x] download sheet csv 
+  - [x] parse entries for website
+  - [x] pull entries into website
   - [ ] parse entries for map
   - [ ] format entries as map format (KML??)
 - [ ] figure out map upload; may be manual to start?
-- [ ] add big ol' faq/disclaimer about role of this info
+- [ ] add big ol' faq/disclaimer sectio/page about role of this info
 - [ ] add links to tools used (e.g. css, google maps, etc)
 
 
@@ -61,5 +60,6 @@ Mapping the current state of nut-allergy-friendliness of various restaurants, co
 optional:
 - link to menu
 
-## Credits
-- Thanks to [wescpy.blogspot.com](https://wescpy.blogspot.com/2016/07/exporting-google-sheet--as-csv.html) for the pointer to use the Google Drive API instead of the Google Sheets API
+## Build site manually
+
+Do `julia --project=site-builder site-builder/run.jl --download`

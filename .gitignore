@@ -1,3 +1,5 @@
 temp/
 Manifest.toml
-assets/*.csv
+secrets.env
+data*.csv
+*.kml
